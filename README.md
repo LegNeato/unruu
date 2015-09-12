@@ -23,12 +23,17 @@ Building:
     $ ./configure
     $ make
 
-Downloading:
-------------
+Building (Mac OS X):
+--------------------
 
-You can download pre-compiled snapshots or releases from:-
+It is easiest to use [Homebrew](http://brew.sh/) for dependencies.
 
-* http://psi.kennynet.co.uk/unruu/
+    $ brew install autogen libgcrypt
+    $ brew install unshield
+    $ ./autogen.sh
+    $ export LDFLAGS='-L/usr/local/Cellar/unshield/1.0/lib/'
+    $ ./configure
+    $ make
 
 Installing:
 -----------
