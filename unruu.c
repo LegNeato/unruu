@@ -108,7 +108,7 @@ bool extract_ruu_files(FILE *ruu) {
     
     int c = 0;
     for(c = 0; c < strlen(RUU_FILES); c++)
-        if(strncmp(RUU_FILES+c, ",", 1) == 0)
+        if(strncmp(&RUU_FILES[c], ",", 1) == 0)
             count++;
     
     char files[] = RUU_FILES;
